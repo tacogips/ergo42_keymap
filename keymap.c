@@ -30,13 +30,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     XXXXXXX,  XXXXXXX, XXXXXXX,  XXXXXXX,  KC_LSFT, KC_LCTL, KC_SPC,  /* | */ KC_SPC,  KC_LSFT, MO(L1),	  XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX \
  	),
 
+
   /* L1
    * ,-----------------------------------------------.   									,------------------------------------------------.
-   * |      |  1  |   2  |   3  |   4  |   5  |      |   									|   6   |  7   |   8  |   9  |   0  |   -  |  =   |
-   * |      |  !  |   @  |   #  |   $  |   %  |      |   									|   ^   |  &   |   *  |   (  |   )  |   _  |  +   |
+   * |      |  1  |   2  |   3  |   4  |   5  |      |   									|       |  7   |   8  |   9  |   0  |   -  |  =   |
+   * |      |  !  |   @  |   #  |   $  |   %  |      |   									|       |  &   |   *  |   (  |   )  |   _  |  +   |
    * |------+-----+------+------+------+------+------|   									|--------------+------+------+------+------+------|
-   * | Enter|     |      | DEL  |   ~  |   %  | ESC  |   									|       | Left | Down | Up   | Right|      |      |
-	 * |			|			|			 |			|      |      |      |									  |	    	|			 |			|      |			|			 |	  	|
+   * | Enter|     |      | DEL  |   ~  |   %  | ESC  |   									|   6   | Left | Down | Up   | Right|      |      |
+	 * |			|			|			 |			|      |      |      |									  |	  ^  	|			 |			|      |			|			 |	  	|
    * |------+-----+------+------+------+------+------|   									|-------+------+------+------+------+------+------|
    * | LAlt | @@@ |      |  {   |  }   |	^	  |  $   |	   								|  @@@  | 		 | 		  |			 |      |      | LAlt |
    * |------+-----+------+------+------+------+------|   									|-------+------+------+------+------+------+------|
@@ -44,10 +45,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * `-----------------------------------------------'   									`------------------------------------------------'
    */
   [L1] = LAYOUT( \
-    XXXXXXX, KC_1,    KC_2,    KC_3,    	 KC_4,       KC_5,    XXXXXXX,  /* | */  KC_6,		 KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,  \
-    KC_ENT,  XXXXXXX, XXXXXXX, KC_DELT, 	 S(KC_GRV),  S(KC_5), _______,  /* | */  XXXXXXX,  KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX, XXXXXXX, \
-    _______, _______, XXXXXXX, S(KC_LBRC), S(KC_RBRC), S(KC_6), S(KC_4),  /* | */  _______,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, \
-    _______, _______, _______, _______, 	 _______, 	 _______, _______,  /* | */  _______,  _______, _______, _______, _______, _______, _______ \
+    XXXXXXX, KC_1,    KC_2,    KC_3,    	 KC_4,       KC_5,    XXXXXXX,  /* | */  XXXXXXX,	KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,  \
+    KC_ENT,  XXXXXXX, XXXXXXX, KC_DELT, 	 S(KC_GRV),  S(KC_5), _______,  /* | */  KC_6,    KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX, XXXXXXX, \
+    _______, _______, XXXXXXX, S(KC_LBRC), S(KC_RBRC), S(KC_6), S(KC_4),  /* | */  _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, \
+    _______, _______, _______, _______, 	 _______, 	 _______, _______,  /* | */  _______, _______, _______, _______, _______, _______, _______ \
   ),
 
 
