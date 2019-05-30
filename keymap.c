@@ -7,8 +7,6 @@ extern keymap_config_t keymap_config;
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
-
-
   /* BASE
    * ,------------------------------------------------.   									,-------------------------------------------------.
 	 * |  `   |   Q  |   W  |   E  |   R  |  T   |	\   |   									|  LAlt |  Y   |  U   |  I   |   O  |   P  |   ]  |
@@ -17,7 +15,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * | Tab  |   A  |   S  |   D  |   F  |  G   | ESC  |   									|   [   |  H   |   J  |   K  |   L  |   ;  |  '   |
 	 * |			|			 |			|			 |      |      |      |											|	  {  	|			 |			|      |			|		:	 |	"  	|
    * |------+------+------+------+------+------+------|   									|-------|------+------+------+------+------+------|
-   * | LAlt | L1   |   Z  |   X  |   C  |   V  |  B   |   									| L1    |  N   |  M   |   ,  |   .  |   /  | LALT |
+   * | L1   | LAlt |   Z  |   X  |   C  |   V  |  B   |   									|  L1   |  N   |  M   |   ,  |   .  |   /  | LALT |
 	 * |			|			 |			|			 |      |      |      |											|	 		  |			 |			|   <  |	>		|		?	 |	  	|
    * |------+------+------+------+------+------+------|   									|-------+------+------+------+------+------+------|
    * |      |      |      |      | LSft | LCtrl|Space |   									| Space | LSft |  L1  |      |			|      |      |
@@ -26,7 +24,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [BASE] = LAYOUT( \
     KC_GRV,   KC_Q,    KC_W,     KC_E,    KC_R,    KC_T,    KC_BSLS,  /* | */ KC_LALT, KC_Y,    KC_U,     KC_I,     KC_O,    KC_P,    KC_RBRC,  \
     KC_TAB ,  KC_A,    KC_S,     KC_D,    KC_F,    KC_G,    KC_ESC,   /* | */ KC_LBRC,  KC_H,    KC_J,     KC_K,     KC_L,    KC_SCLN, KC_QUOT, \
-    KC_LALT,  MO(L1),  KC_Z,     KC_X,    KC_C,    KC_V,    KC_B,     /* | */ MO(L1), KC_N,    KC_M,     KC_COMM,  KC_DOT,  KC_SLSH, KC_LALT, \
+    MO(L1),   KC_LALT, KC_Z,     KC_X,    KC_C,    KC_V,    KC_B,     /* | */ MO(L1), KC_N,    KC_M,     KC_COMM,  KC_DOT,  KC_SLSH, KC_LALT, \
     XXXXXXX,  XXXXXXX, XXXXXXX,  XXXXXXX,  KC_LSFT, KC_LCTL, KC_SPC,  /* | */ KC_SPC,  KC_LSFT, MO(L1),	  XXXXXXX,  XXXXXXX, XXXXXXX, XXXXXXX \
  	),
 
@@ -39,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * | Enter|     |      | DEL  |   ~  |   %  | ESC  |   									|   6   | Left | Down | Up   | Right|      |      |
 	 * |			|			|			 |			|      |      |      |									  |	  ^  	|			 |			|      |			|			 |	  	|
    * |------+-----+------+------+------+------+------|   									|-------+------+------+------+------+------+------|
-   * | LAlt | @@@ |      |  {   |  }   |	^	  |  $   |	   								|  @@@  | 		 | 		  |			 |      |      | LAlt |
+   * | @@@  |LAlt |      |  {   |  }   |	^	  |  $   |	   								|  @@@  | 		 | 		  |			 |      |      | LAlt |
    * |------+-----+------+------+------+------+------|   									|-------+------+------+------+------+------+------|
    * |      |     |      |      | LSft | LCtrl|Space |   									| Space | LSft | @@@  |      |			|      |      |
    * `-----------------------------------------------'   									`------------------------------------------------'
